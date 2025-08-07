@@ -1,10 +1,17 @@
-# Rama vacía inicial
-Antes que nada es necesario tener la carpeta base de SIPp (sipp) instalada.
-Estos son los archivos que hay que incluir en la carpeta base de sipp para poder simular el intercambio de media entre un UAC y un UAS en SIPp:
-  - g711a_UAS.pcap: representa la media que envía el UAS al UAC.
-  - uas_mod.xml: es el archivo de configuración del UAS: uas.xml original + audio añadido (g711a_UAS.pcap).
-  - sipp_script.sh: es el script que ejecuta las líneas para activar UAS y UAC con una configuración concreta para iniciar el intercambio de media.
-    
-El fichero de configuración utilizado pora el UAC (uac_pcap.xml) es predeterminado de la carpeta base de sipp.
+# Demostración de Membrane - RTP
+
+Este proyecto demuestra el manejo de RTP en **Membrane**.
+
+Este ejemplo utiliza el [complemento RTP](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP.
+
+## Ejecutando la demostración
+
+Para ejecutar la demostración, necesitarás tener [Elixir instalado](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
+
+- Abre una terminal en el directorio del proyecto
+- Escribe `mix deps.get` para descargar las dependencias
+- Escribe en la terminal `mix run send_and_wav.exs` para correr el pipeline que recibe la media de SIpp, la procesa generando un wav y la reenvía a dos puertos distintos.
+- Escribe en otras dos terminales `mix run UAC_rcv.exs` y `mix run UAS_rcv.exs` para correr los pipelines que escuchan cada uno en uno de los dos puertos a los que el pipeline anterior reenvía la media que recibe. Se generan 2 wav's por separado (uno por cada flujo de media que envían UAC y UAS).
+
 
 
