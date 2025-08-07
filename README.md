@@ -2,11 +2,15 @@
 
 Este proyecto demuestra el manejo de RTP en **Membrane** con **SIPp**.
 
-Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP. Además es necesario tener instalado [SIPp](https://sipp.readthedocs.io/en/v3.6.1/installation.html)
+Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP. Además es necesario tener instalado [SIPp](https://sipp.readthedocs.io/en/v3.6.1/installation.html).
 
 ## Ejecutando la demostración
 
-Para ejecutar la demostración, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
+Para ejecutar la parte de SIPp, en el directorio de la carpeta sipp:
+- Dale permiso al .sh: chmod +x sipp_script.sh
+- Accede al directorio en el que esté tu carpeta y ejecuta:`.\sipp_script.sh`
+
+Para ejecutar la parte de Membrane, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
 
 - Abre una terminal en el directorio del proyecto
 - Escribe `mix deps.get` para descargar las dependencias
