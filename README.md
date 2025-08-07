@@ -6,8 +6,7 @@ Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membra
 
 ## Ejecutando la demostración
 
-1º) Para ejecutar la parte de Membrane, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Se recomienda el uso de `VSCode` para visualizar mejor el código. 
-    Para ello son necesarios los plugins `ElixirLS: Elixir support and debugger` y `Elixir Formatter`. Luego, haz lo siguiente:
+1º) Para ejecutar la parte de Membrane, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Se recomienda el uso de `VSCode` para visualizar mejor el código.Para ello son necesarios los       plugins `ElixirLS: Elixir support and debugger` y `Elixir Formatter`. Luego, haz lo siguiente:
 
 - Abre una terminal en el directorio del proyecto
 - Escribe `mix deps.get` para descargar las dependencias
