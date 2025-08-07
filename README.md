@@ -2,7 +2,7 @@
 
 Este proyecto demuestra el manejo de RTP en **Membrane** con **SIPp**.
 
-Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP. Además es necesario tener instalado [SIP_p](https://sipp.readthedocs.io/en/v3.6.1/installation.html)
+Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP. Además es necesario tener instalado [SIPp](https://sipp.readthedocs.io/en/v3.6.1/installation.html)
 
 ## Ejecutando la demostración
 
