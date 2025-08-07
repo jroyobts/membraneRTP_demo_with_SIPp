@@ -2,11 +2,11 @@
 
 Este proyecto demuestra el manejo de RTP en **Membrane**.
 
-Este ejemplo utiliza el [complemento RTP](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP.
+Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP.
 
 ## Ejecutando la demostración
 
-Para ejecutar la demostración, necesitarás tener [Elixir instalado](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
+Para ejecutar la demostración, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
 
 - Abre una terminal en el directorio del proyecto
 - Escribe `mix deps.get` para descargar las dependencias
