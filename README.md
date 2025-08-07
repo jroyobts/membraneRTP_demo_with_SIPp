@@ -1,39 +1,21 @@
-# Membrane Demo - RTP
+```
+# Demostración de Membrane - RTP
 
-This project demonstrates handling RTP in Membrane.
+Este proyecto demuestra el manejo de RTP en **Membrane**.
 
-This example uses [RTP plugin](https://github.com/membraneframework/membrane_rtp_plugin) that is responsible for receiving and sending RTP streams.
+Este ejemplo utiliza el [complemento RTP](https://github.com/membraneframework/membrane_rtp_plugin) que es responsable de recibir y enviar flujos de RTP.
 
-## Running the demo
+## Ejecutando la demostración
 
-To run the demo, you'll need to have [Elixir installed](https://elixir-lang.org/install.html). Then, do the following:
+Para ejecutar la demostración, necesitarás tener [Elixir instalado](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
 
-- Open a terminal in the project directory
-- Type `mix deps.get` to download dependencies
-- Escribe en la terminal `mix run send_and_wav.exs`
-- Type `mix run receive.exs` to run the receiving pipeline
-- Wait until the script runs
-- Open another terminal in the project directory
-- Type `mix run send.exs` to run the sending pipeline
-
-You should be able to see a player showing an example video.
-
-The sender pipeline (run with `send.exs`) takes sample audio and video files and sends them via RTP.
-The receiving pipeline (run with `receive.exs`) receives the audio and video streams and plays them.
-
-If you wish to stream using SRTP, add a `--secure` flag when running both `receive.exs` and `send.exs`.
-
-You can also use another tool, like [GStreamer](https://gstreamer.freedesktop.org/), to send the stream. In this case, you only need to start the receiving pipeline:
-
-```shell
-mix run receive.exs
+- Abre una terminal en el directorio del proyecto
+- Escribe `mix deps.get` para descargar las dependencias
+- Escribe en la terminal `mix run send_and_wav.exs` para correr el pipeline que recibe la media de SIpp, la procesa generando un wav y la reenvía a dos puertos distintos.
+- Escribe en otras dos terminales `mix run UAC_rcv.exs` y `mix run UAS_rcv.exs` para correr los pipelines que escuchan cada uno en uno de los dos puertos a los que el pipeline anterior reenvía la media que recibe. Se generan 2 wav's por separado (uno por cada flujo de media que envían UAC y UAS).
 ```
 
-and launch GStreamer:
 
-```shell
-gst-launch-1.0 -v audiotestsrc ! audio/x-raw,rate=48000,channels=2 ! opusenc ! rtpopuspay pt=120 ! udpsink host=127.0.0.1 port=5002\
-    videotestsrc ! video/x-raw,format=I420 ! x264enc key-int-max=10 tune=zerolatency ! rtph264pay pt=96 ! udpsink host=127.0.0.1 port=5000
 ```
 
 ## Copyright and License
