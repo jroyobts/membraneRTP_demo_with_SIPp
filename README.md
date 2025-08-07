@@ -10,7 +10,8 @@ Para ejecutar la parte de SIPp, en el directorio de la carpeta sipp:
 - Dale permiso al .sh: chmod +x sipp_script.sh
 - Accede al directorio en el que esté tu carpeta y ejecuta:`.\sipp_script.sh`
 
-Para ejecutar la parte de Membrane, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Luego, haz lo siguiente:
+Para ejecutar la parte de Membrane, necesitarás tener [Elixir](https://elixir-lang.org/install.html). Se recomienda el uso de `VSCode` para visualizar mejor el código. 
+Para ello son necesarios los plugins `ElixirLS: Elixir support and debugger` y `Elixir Formatter`. Luego, haz lo siguiente:
 
 - Abre una terminal en el directorio del proyecto
 - Escribe `mix deps.get` para descargar las dependencias
