@@ -1,4 +1,4 @@
-# Membrane - RTP-SIPp
+# Membrane - RTP- SIPp
 
 Este proyecto demuestra el manejo de RTP en **Membrane** con **SIPp**.
 
