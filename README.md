@@ -16,7 +16,7 @@ Este ejemplo utiliza el [RTP_plugin](https://github.com/membraneframework/membra
 
 2º) Para ejecutar la parte de SIPp, en el directorio de la carpeta sipp:
 - Dale permiso al .sh: chmod +x sipp_script.sh
-- Accede al directorio en el que esté tu carpeta y ejecuta:`.\sipp_script.sh`
+- Ejecuta:`.\sipp_script.sh`
 
 ## Copyright and License
 
