@@ -10,7 +10,7 @@ To run the demo, you'll need to have [Elixir installed](https://elixir-lang.org/
 
 - Open a terminal in the project directory
 - Type `mix deps.get` to download dependencies
-- Escribe en la terminal `mix run send_and_wav.exs 
+- Escribe en la terminal `mix run send_and_wav.exs`
 - Type `mix run receive.exs` to run the receiving pipeline
 - Wait until the script runs
 - Open another terminal in the project directory
